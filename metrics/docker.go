@@ -25,7 +25,7 @@ func getCgroupMountPath() (string, error) {
 	if strings.HasPrefix(res[1], "/cgroup") {
 		return "/cgroup", nil
 	}
-	return "/sys/fs/cgroup", nil
+	return "/sys/cgroup", nil
 }
 
 // Collect CPU & Memory usage per Docker Container
